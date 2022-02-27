@@ -2,6 +2,8 @@
 
 *S10anzeigen* ist eine Webanwendung, welche die von [S10auslesen](https://github.com/senneschall/S10auslesen) aufbereiteten, aktuellen Messwerte eines E3/DC S10 Hauskraftwerk grafisch animiert darstellt.
 
+![Beispiel](/docs/S10anzeigen.jpg)
+
 ## Zielplattform
 
 *S10anzeigen* wurde als reine Webanwendung entworfen und geschrieben mit HTML5, CSS3, JavaScript und SVG1.1, um eine möglichst große Anzahl an unterstützen Plattformen zu bedienen. Da nur ein Browser benötigt wird, um *S10anzeigen* auszuführen, werden alle Klassen von Geräten unterstützt, vom Computer über Mobiltelefone.
