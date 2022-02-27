@@ -1,0 +1,124 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * S10anzeigen animates the reading of a E3/DC S10 in a graphical way      *
+ * Copyright (C) 2018-2022 - senneschall <senneschall@web.de>              *
+ * This file is part of S10anzeigen.                                       *
+ *                                                                         *
+ * S10anzeigen is free software: you can redistribute it and/or modify     *
+ * it under the terms of the GNU General Public License as published by    *
+ * the Free Software Foundation, either version 3 of the License, or       *
+ * (at your option) any later version.                                     *
+ *                                                                         *
+ * S10anzeigen is distributed in the hope that it will be useful,          *
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of          *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           *
+ * GNU General Public License for more details.                            *
+ *                                                                         *
+ * You should have received a copy of the GNU General Public License       *
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+ @font-face {
+    font-family: 'Vollkorn';
+    src: url('./svg/Vollkorn-Medium.woff2') format('woff2');
+}
+
+body{
+    background-attachment:fixed;
+    background-image:linear-gradient(#fff, #adadad);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: Vollkorn;
+    font-variant: small-caps;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "ss17" on;
+    margin:0;
+}
+div{
+    align-items:center;
+    display:flex;
+    justify-content:center;
+}
+.bs{
+    background-image:url("img/bg_sun.jpg");
+}
+.bb{
+    background-image:url("img/bg_bat.jpg");
+}
+.bg{
+    background-image:url("img/bg_grd.jpg");
+}
+.fc{
+    align-content:stretch;
+    align-items:stretch;
+    display:flex;
+}
+.ba{
+    --el: 3
+}
+.gc{
+    display:grid;
+    grid-column-gap:0;
+    grid-row-gap:0;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    height:100vmin;
+    width:100vmin;
+}
+.be{
+    --el: 4
+}
+.ba,.be{
+    display:grid;
+    grid-column-gap:0;
+    grid-row-gap:0;
+}
+.tx{
+    color:#762;
+}
+.mn{
+    width:100%;
+}
+@media (orientation: landscape) {
+    .fc{
+        flex-flow:row nowrap;
+    }
+    .ba,.be{
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(var(--el),1fr);
+        height:100vmin;
+        width:calc(50vmax - 50vmin);
+    }
+    .bi{
+        height:25vmin;
+    }
+    .tx{
+        height:50vmin;
+        text-orientation:upright;
+        writing-mode:vertical-lr;
+    }
+    .it{
+        width:8vmin;
+    }
+}
+@media (orientation: portrait) {
+    .fc{
+        flex-flow:column nowrap;
+    }
+    .ba,.be{
+        grid-template-columns:repeat(var(--el),1fr);
+        grid-template-rows:1fr;
+        height:calc(50vmax - 50vmin);
+        width:100vmin;
+    }
+    .bi{
+        width:25vmin;
+    }
+    .tx{
+        text-orientation:mixed;
+        width:50vmin;
+        writing-mode:horizontal-tb;
+    }
+    .it{
+        height:8vmin;
+    }
+}

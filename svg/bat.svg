@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250 250" version="1.1">
+	<style type="text/css">
+		@font-face {
+			font-family: 'Vollkorn';
+			src: url('./Vollkorn-Medium.woff2') format('woff2');
+		}
+	</style>
+	<rect id="soc" fill="#ddd" stroke="none" width="64" height="100" x="93" y="79" rx="0" ry="0" />
+	<rect id="remain" fill="#ddd" stroke="none" width="64" height="0" x="93" y="79" rx="0" ry="0" />
+	<path id="wdrop" fill="#18f" d="M 125 69 C 125.8 74, 128.5 76, 127.5 78 C 127.3 78.4, 126.6 79, 125 79 C 123.4 79, 122.7 78.4, 122.5 78 C 121.5 76, 124.2 74, 125 69 Z" />
+	<g id="wout" fill="#ddd" stroke="none">
+		<circle cx="97" cy="184" r="2" />
+		<circle cx="101" cy="181" r="2" />
+		<circle cx="111" cy="185" r="2" />
+		<circle cx="118" cy="181" r="2" />
+		<circle cx="125" cy="182" r="2" />
+		<circle cx="131" cy="185" r="2" />
+		<circle cx="139" cy="184" r="2" />
+		<circle cx="146" cy="181" r="2" />
+		<circle cx="153" cy="185" r="2" />
+	</g>
+	<rect id="batterybody" fill="none" stroke="#444" stroke-width="8" width="72" height="108" x="89" y="75" ry="1" rx="1" />
+	<rect id="batterycap" fill="#444" stroke="#444" stroke-width="4" width="20" height="8" x="115" y="65" rx="1.92" ry="1.04" />
+	<text id="txt" font-family="Vollkorn" font-variant="small-caps" fill="#000" stroke="none" x="125" y="225" text-anchor="middle" text-align="center">Ladestand: 100%</text>
+</svg>

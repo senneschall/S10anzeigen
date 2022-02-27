@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" version="1.1">
+	<style type="text/css">
+		@font-face {
+			font-family: 'Vollkorn';
+			src: url('./Vollkorn-Medium.woff2') format('woff2');
+		}
+	</style>
+	<defs>
+		<filter id="blr" x="-50%" y="-50%" width="200%" height="200%">
+			<feGaussianBlur stdDeviation="8" in="SourceGraphic" />
+		</filter>
+	</defs>
+	<rect width="58" height="44" x="21" y="25" ry="21" rx="21" fill="#aaa" stroke="none" style="filter:url(#blr)" />
+	<g stroke="#444" fill="none" stroke-width="5" stroke-linecap="round">
+		<path d="M 62 10 A 37 37 37.84928883 1 1 38 10"/>
+		<line x1="50" y1="3" x2="50" y2="20" />
+	</g>
+	<g fill="#444" stroke="none" text-anchor="middle" text-align="center">
+		<text id="ownq" font-family="Vollkorn" font-variant="small-caps" x="50" y="96">Eigenquote</text>
+		<text id="txt" font-family="Vollkorn" font-variant="small-caps" stroke="#eee" stroke-width="0.8" x="50" y="52">100%</text>
+	</g>
+</svg>

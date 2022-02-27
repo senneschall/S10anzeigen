@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250 250" version="1.1">
+	<style type="text/css">
+		@font-face {
+			font-family: 'Vollkorn';
+			src: url('./Vollkorn-Medium.woff2') format('woff2');
+		}
+	</style>
+	<defs>
+		<filter id="blr" x="-50%" y="-50%" width="200%" height="200%">
+			<feGaussianBlur stdDeviation="2" in="SourceGraphic" result="blur" />
+		</filter>
+		<g id="post" fill="#444" stroke="none">
+			<path d="M 28 26 L 32 26 L 32 160 L 28 160 Z" />
+			<path d="M 28 26 L 12 14 L 8 14 L 28 30 Z" />
+			<path d="M 32 26 L 48 14 L 52 14 L 32 30 Z" />
+			<rect d="M 32 26 L 48 14 L 52 14 L 32 30 Z" />
+			<rect x="0" y="10" width="60" height="4" rx="2" ry="2" />
+			<rect x="9" y="5" width="2" height="6" rx="1" ry="1" />
+			<rect x="49" y="5" width="2" height="6" rx="1" ry="1" />
+		</g>
+		<path id="lnaw1" d="M 50 65.5 C 65 95.5 111 117.5 120 99.5" />
+		<path id="lnaw2" d="M 120 99.5 C 129 117.5 167.4 133.8 171.9 124.8" />
+		<path id="lnto1" d="M 144 99.5 C 135 117.5 105 95.5 90 65.5" />
+		<path id="lnto2" d="M 183.9 124.8 C 179.4 133.8 153 117.5 144 99.5" />
+		<g id="sparkle" stroke="none">
+			<path d="M 0 -5 C 1 -1 1 -1 5 0 C 1 1 1 1 0 5 C -1 1 -2 1 -5 0 C -1 -1 -1 -1 0 -5 Z" />
+			<path d="M 0 -1 L 3 -3 L 1 0 L 3 3 L 0 1 L -3 3 L -1 0 L -3 -3 Z" />
+		</g>
+	</defs>
+	<g display="none" id="island" stroke="#444" stroke-width="2">
+		<path d="M 10 238 C 54 178, 229 203, 240 236 C 247 255, 12 248, 10 238 Z" fill="#ec6" />
+		<path d="M 103,206 C 106 172 96 155 129 91 C 132 86 143 87 141 93 C 120 146 121 154 127 204 C 128 210 104 209 103 206 Z" fill="#983" />
+		<g id="leafs" fill="#3a4">
+			<path d="M 138 83 C 91 42, 99 41, 124 58 C 174 94, 138 83, 138 83 Z" />
+			<path d="M 140 89 C 174 66, 211 45, 164 61 C 118 76, 140 89, 140 89 Z" />
+			<path d="M 135 92 C 38 131, 35 126, 82 101 C 151 64, 135 92, 135 92 Z" />
+			<path d="M 135 88 C 55 76, -9 47, 75 59 C 157 72, 135 88, 135 88 Z" />
+			<path d="M 135 92 C 246 85, 278 67, 205 70 C 128 73, 135 92, 135 92 Z" />
+			<path d="M 131 92 C 192 105, 280 171, 216 112 C 154 54, 131 92, 131 92 Z" />
+		</g>
+	</g>
+	<g id="grid" fill="none" stroke="#222" stroke-linecap="round" stroke-width="1">
+		<use xlink:href="#post" transform="translate(0 -5) scale(0.3) translate(563 426.6666667)" />
+		<use xlink:href="#lnaw2" stroke-width="0.6" />
+		<g display="none" id="spaw2">
+			<use xlink:href="#sparkle" style="filter:url(#blr)" />
+			<use xlink:href="#sparkle" />
+		</g>
+		<use xlink:href="#lnto2" stroke-width="0.6" />
+		<g display="none" id="spto2">
+			<use xlink:href="#sparkle" style="filter:url(#blr)" />
+			<use xlink:href="#sparkle" />
+		</g>
+		<use xlink:href="#post" transform="translate(0 -5) scale(0.6) translate(190 168.3333333)" />
+		<use xlink:href="#lnaw1" />
+		<g display="none" id="spaw1">
+			<use xlink:href="#sparkle" style="filter:url(#blr)" />
+			<use xlink:href="#sparkle" />
+		</g>
+		<use xlink:href="#lnto1" />
+		<g display="none" id="spto1">
+			<use xlink:href="#sparkle" style="filter:url(#blr)" />
+			<use xlink:href="#sparkle" />
+		</g>
+		<use xlink:href="#post" transform="translate(40 60)" />
+		<text id="txt" font-family="Vollkorn" font-variant="small-caps" fill="#000" stroke="none" x="125" y="245" text-anchor="middle" text-align="center">Netzleistung: 1000 Watt</text>
+	</g>
+</svg>

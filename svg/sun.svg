@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250 250" version="1.1">
+	<style type="text/css">
+		@font-face {
+			font-family: 'Vollkorn';
+			src: url('./Vollkorn-Medium.woff2') format('woff2');
+		}
+	</style>
+	<defs>
+		<polygon id="beam" points="-14,-72 14,-72 0,-99" />
+	</defs>
+	<path display="none" id="moon" d="M 159 125 C 159 93, 127 61, 95 61 C 111 77, 127 93, 127 125 C 127 157, 111 173, 95 189 C 127 189, 159 157, 159 125" fill="#fe8" stroke="#444" stroke-width="4" />
+	<g id="sun">
+		<circle fill="#fd5" stroke="#eb3" stroke-width="2" cx="125" cy="125" r="64" />
+		<g id="beams" fill="#ec4" stroke="#da2" stroke-width="1">
+			<use xlink:href="#beam" transform="translate(125 125)" />
+			<use xlink:href="#beam" transform="translate(125 125) rotate(30)" />
+			<use xlink:href="#beam" transform="translate(125 125) rotate(60)" />
+			<use xlink:href="#beam" transform="translate(125 125) rotate(90)" />
+			<use xlink:href="#beam" transform="translate(125 125) rotate(120)" />
+			<use xlink:href="#beam" transform="translate(125 125) rotate(150)" />
+			<use xlink:href="#beam" transform="translate(125 125) rotate(180)" />
+			<use xlink:href="#beam" transform="translate(125 125) rotate(210)" />
+			<use xlink:href="#beam" transform="translate(125 125) rotate(240)" />
+			<use xlink:href="#beam" transform="translate(125 125) rotate(270)" />
+			<use xlink:href="#beam" transform="translate(125 125) rotate(300)" />
+			<use xlink:href="#beam" transform="translate(125 125) rotate(330)" />
+		</g>
+	</g>
+	<path display="none" id="cloud" d="M 115 175 C 55 175, 45 125, 95 115 C 105 95, 115 85, 145 90 C 155 75, 210 65, 215 110 C 240 125, 250 175, 205 175 Z" fill="#9ac" stroke="#444" stroke-width="4" />
+	<g display="none" id="tree" stroke="#444" stroke-width="2">
+		<rect id="trunk" width="16" height="55" x="77" y="175" fill="#b63" />
+		<path id="top" d="M 70 175 C 53 178, 45 156, 50 149 C 40 146, 39 125, 51 120 C 45 95, 70 95, 75 102 C 80 91, 107 91, 109 110 C 123 104, 136 139, 120 145 C 127 150, 121 175, 108 172 C 105 183, 75 185, 70 175 Z" fill="#2a6" />
+	</g>
+	<text id="txt" fill="#000" font-family="Vollkorn" font-variant="small-caps" stroke="none" x="125" y="245" text-anchor="middle" text-align="center">PV-Anlage: 10000 Watt</text>
+</svg>

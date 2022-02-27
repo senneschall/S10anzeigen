@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" version="1.1">
+	<style type="text/css">
+		@font-face {
+			font-family: 'Vollkorn';
+			src: url('./Vollkorn-Medium.woff2') format('woff2');
+		}
+	</style>
+	<defs>
+		<g id="energy" stroke="none">
+			<path d="M 36 18 L 32 41 L 43 38 L 28 68 L 32 45 L 22 48 Z" />
+		</g>
+	</defs>
+	<g display="none" id="icon" fill="#444" stroke="#444" stroke-width="3" stroke-linecap="round">
+		<path id="station" stroke="none" d="M 10 18 C 25 15, 40 15, 55 18 L 55 68 C 57 68, 58 68, 60 70 L 60 81 C 43 84, 22 84, 5 81 L 5 70 C 7 68, 8 68, 10 68 Z" />
+		<path id="cable" fill="none" stroke-width="6" d="M 54 52 L 59 52 C 63 52, 70 60, 71 66 C 72 72, 75 80, 82 80 C 89 80, 89 70, 89 65 C 89 55, 87 49, 83 41" />
+		<path id="plug" stroke="none" d="M 84 43 C 82 44, 77 44, 74 38 C 72 39, 72 39, 71 37 C 74 33, 84 29, 87 29 C 88 31, 88 31, 86 32 C 89 38, 86 42, 84 43 Z" />
+		<line id="p1" x1="76" y1="37" x2="73" y2="31" />
+		<line id="p2" x1="84" y1="33" x2="81" y2="27" />
+		<use id="bolt" fill="#4c0" stroke-width="0" xlink:href="#energy" />
+	</g>
+	<g fill="#000" stroke="none" text-anchor="middle" text-align="center">
+		<text display="none" id="exty" font-family="Vollkorn" font-variant="small-caps" x="50" y="12">Einspeiser</text>
+		<text display="none" id="txt" font-family="Vollkorn" font-variant="small-caps" x="50" y="98">0 Watt</text>
+	</g>
+</svg>

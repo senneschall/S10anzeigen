@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" version="1.1">
+	<style type="text/css">
+		@font-face {
+			font-family: 'Vollkorn';
+			src: url('./Vollkorn-Medium.woff2') format('woff2');
+		}
+	</style>
+	<defs>
+		<filter id="blr" x="-50%" y="-50%" width="200%" height="200%">
+			<feGaussianBlur stdDeviation="8" in="SourceGraphic" />
+		</filter>
+	</defs>
+	<rect width="56" height="42" x="22" y="26" ry="18" rx="18" fill="#aaa" stroke="none" style="filter:url(#blr)" />
+	<g stroke-width="4" stroke-linejoin="round">
+		<polyline points="20,45 20,80 80,80" fill="none" stroke="#444" />
+		<polyline points="80,68 80,33 50,3 20,33" fill="none" stroke="#444" />
+		<circle cx="80" cy="80" r="6" fill="#444" stroke="none" />
+		<circle cx="20" cy="33" r="6" fill="#444" stroke="none" />
+	</g>
+	<g fill="#444" stroke="none" text-anchor="middle" text-align="center">
+		<text id="auty" font-family="Vollkorn" font-variant="small-caps" x="50" y="98">Autarkie</text>
+		<text id="txt" font-family="Vollkorn" font-variant="small-caps" x="50" y="55" stroke="#eee" stroke-width="0.8">100%</text>
+	</g>
+</svg>
